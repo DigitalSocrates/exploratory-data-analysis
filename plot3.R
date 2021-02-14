@@ -31,7 +31,7 @@ folder = "F:\\r_stuff\\"
 # write the output in png format
 
 # build a full path
-filePath = file.path(folder,"Plot3.png", fsep = .Platform$file.sep)
+filePath = file.path(folder,"plot3.png", fsep = .Platform$file.sep)
 
 # Open PNG device
 png(file = filePath, width = width, height = height, units = units)

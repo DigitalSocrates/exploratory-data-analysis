@@ -25,6 +25,12 @@ folder = "F:\\r_stuff\\"
 # build a full path
 filePath = file.path(folder,"plot2.png", fsep = .Platform$file.sep)
 
+# Plot 2
+# name: Active Power over Date
+# use:basic plot
+#columns: Global_active_power, DateTime
+# include units in title
+# write the output in png format
 # Open PNG device
 png(file = filePath, width = width, height = height, units = units)
 

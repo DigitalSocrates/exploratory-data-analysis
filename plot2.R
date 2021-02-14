@@ -21,3 +21,21 @@ units = "px"
 
 # folder 
 folder = "F:\\r_stuff\\"
+
+# build a full path
+filePath = file.path(folder,"plot2.png", fsep = .Platform$file.sep)
+
+# Open PNG device
+png(file = filePath, width = width, height = height, units = units)
+
+# Generating Plot
+plot(data$Global_active_power ~ data$DateTime, type = "l", ylab = "Global Active Power (kilowatts)", xlab = "" )
+
+# fill area under the curve
+#polygon(c(0, data$Global_active_power), c(0, data$DateTime), col=gray(0.95), border=NA)
+
+# Add legend
+#legend("topright", col = c("black", "red"), lty = 1, lwd = 2, legend = c("Global_active_power"))
+
+# close device
+dev.off()

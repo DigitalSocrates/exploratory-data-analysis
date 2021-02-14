@@ -21,3 +21,30 @@ units = "px"
 
 # folder 
 folder = "F:\\r_stuff\\"
+
+
+# Plot 3
+# name:
+# use: histogram
+# column: Global_active_power
+# include units in title
+# write the output in png format
+
+# build a full path
+filePath = file.path(folder,"Plot3.png", fsep = .Platform$file.sep)
+
+# Open PNG device
+png(file = filePath, width = width, height = height, units = units)
+
+# Generating Plot
+with(data, {
+  plot(Sub_metering_1 ~ DateTime, col="black", type = "l", ylab = "Energy sub metering", xlab = "")
+  lines(Sub_metering_2 ~ DateTime, col = 'red')
+  lines(Sub_metering_3 ~ DateTime, col = 'blue')
+})
+
+# Add legend
+legend("topright", col = c("black", "red", "blue"), lty = 1, lwd = 2, legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+
+# close device
+dev.off()

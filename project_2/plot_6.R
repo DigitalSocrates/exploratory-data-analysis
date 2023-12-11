@@ -15,7 +15,7 @@ units = "px"
 folder = "H:\\workspace\\exploratory-data-analysis\\project_2\\"
 
 # Plot 6
-# name: # Compare emissions from motor vehicle sources in Baltimore City
+# name: # Compare emissions from motor vehicle sources in Baltimore City and LA county
 # use: bar plot
 # column: aggregated total
 # include units in title

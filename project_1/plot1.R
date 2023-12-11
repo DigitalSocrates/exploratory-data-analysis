@@ -29,7 +29,7 @@ folder = "F:\\r_stuff\\"
 # include units in title
 # write the output in png format
 # build a full path
-filePath = file.path(folder,"plot1.png", fsep = .Platform$file.sep)
+filePath = file.path(folder, "plot1.png", fsep = .Platform$file.sep)
 
 # Open PNG device
 png(file = filePath, width = width, height = height, units = units)
